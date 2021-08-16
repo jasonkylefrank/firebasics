@@ -1,0 +1,1 @@
+This project is about learning the basics of Google Firebase.  To start with, I'm following the "Firebase - Back to Basics" video by Fireship.io.
