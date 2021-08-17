@@ -7,6 +7,7 @@ const googleSignInBtn  = document.getElementById('googleSignInBtn');
 const createEmailAccountBtn = document.getElementById('createEmailAccountBtn');
 const signInViaEmailBtn = document.getElementById('signInViaEmailBtn');
 const submitCreateAccountBtn = document.getElementById('submitCreateAccountBtn');
+const emailSignInSubmitBtn = document.getElementById('emailSignInSubmitBtn');
 
 const createAccountUI = document.getElementById('createAccountUI');
 const emailSignInUI = document.getElementById('emailSignInUI');
@@ -47,6 +48,20 @@ submitCreateAccountBtn.onclick = async () => {
     }
 }
 
+
+signInViaEmailBtn.onclick = () => {
+    emailSignInUI.hidden = false;
+    createEmailAccountBtn.hidden = true;
+    googleSignInBtn.hidden = true;
+    signInViaEmailBtn.hidden = true;
+};
+
+emailSignInSubmitBtn.onclick = () => {
+    alert("todo");
+
+    // See: https://firebase.google.com/docs/auth/web/password-auth#sign_in_a_user_with_an_email_address_and_password
+    
+};
 
 
 signOutBtn.onclick = () => auth.signOut();
