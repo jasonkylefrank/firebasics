@@ -35,6 +35,38 @@
         <script src="./app.js" defer></script>
     </head>
     <body>
-        <p>This is some text</p>
+        <h1>Firebasics app</h1>
+
+        <section id="whenSignedOut">
+            <button id="googleSignInBtn">Sign in with Google!</button>
+
+
+
+            <button id="createEmailAccountBtn">Create account via email</button>
+
+            <div id="createAccountUI" hidden="true">
+                <h3>Create account</h3>
+                <input type="text" id="createAccountEmail" placeholder="email" />
+                <input type="text" id="createAccountPassword" placeholder="password" />
+                <button id="submitCreateAccountBtn" type="submit">Submit</button>
+            </div>
+            
+
+
+            <button id="signInViaEmailBtn">Sign in via email</button>
+
+            <div id="emailSignInUI" hidden="true">
+                <h3>Sign in via email</h3>
+                <input type="text" id="emailSignInEmail" placeholder="email" />
+                <input type="text" id="emailSignInPassword" placeholder="password" />
+            </div>
+        </section>        
+
+        <section id="whenSignedIn" hidden="true">
+            <div id="userDetails">
+
+            </div>
+            <button id="signOutBtn">Sign out</button>
+        </section>
     </body>
 </html>
