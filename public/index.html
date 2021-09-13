@@ -6,11 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Firebasics</title>
 
+        <link rel="stylesheet" href="app.css" />
+
         <!-- The core Firebase JS SDK is always required and must be listed first -->
         <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
 
-        <!-- TODO: Add SDKs for Firebase products that you want to use
-            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <!-- Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
         <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-analytics.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
@@ -35,39 +37,45 @@
         <script src="./app.js" defer></script>
     </head>
     <body>
-        <h1>Firebasics app</h1>
+        <main>
+            <h1>Firebasics app</h1>
+    
+            <section id="whenSignedOut">
+                <button id="googleSignInBtn">Sign in with Google!</button>
+    
+    
+    
+                <button id="createEmailAccountBtn">Create account via email</button>
+    
+                <div id="createAccountUI" hidden="true">
+                    <h3>Create account</h3>
+                    <input type="text" id="createAccountEmail" placeholder="email" />
+                    <input type="text" id="createAccountPassword" placeholder="password" />
+                    <button id="submitCreateAccountBtn" type="submit">Submit</button>
+                </div>
+                
+    
+    
+                <button id="signInViaEmailBtn">Sign in via email</button>
+    
+                <div id="emailSignInUI" hidden="true">
+                    <h3>Sign in via email</h3>
+                    <input type="text" id="emailSignInEmail" placeholder="email" />
+                    <input type="text" id="emailSignInPassword" placeholder="password" />
+                    <button id="emailSignInSubmitBtn" type="submit">Submit</button>
+                </div>
+            </section>        
+    
+            <section id="whenSignedIn" hidden="true">
+                <div id="userDetails">
+    
+                </div>
+                <button id="signOutBtn">Sign out</button>
+            </section>
+        </main>
 
-        <section id="whenSignedOut">
-            <button id="googleSignInBtn">Sign in with Google!</button>
-
-
-
-            <button id="createEmailAccountBtn">Create account via email</button>
-
-            <div id="createAccountUI" hidden="true">
-                <h3>Create account</h3>
-                <input type="text" id="createAccountEmail" placeholder="email" />
-                <input type="text" id="createAccountPassword" placeholder="password" />
-                <button id="submitCreateAccountBtn" type="submit">Submit</button>
-            </div>
-            
-
-
-            <button id="signInViaEmailBtn">Sign in via email</button>
-
-            <div id="emailSignInUI" hidden="true">
-                <h3>Sign in via email</h3>
-                <input type="text" id="emailSignInEmail" placeholder="email" />
-                <input type="text" id="emailSignInPassword" placeholder="password" />
-                <button id="emailSignInSubmitBtn" type="submit">Submit</button>
-            </div>
-        </section>        
-
-        <section id="whenSignedIn" hidden="true">
-            <div id="userDetails">
-
-            </div>
-            <button id="signOutBtn">Sign out</button>
-        </section>
+        <footer>
+            This is an awesome footer
+        </footer>
     </body>
 </html>

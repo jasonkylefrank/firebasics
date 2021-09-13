@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 24px;
+    height: calc(100vh - 48px);
+}
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+footer {
+    display: flex;
+    color: rgba(0,0,0,0.54);
+}
