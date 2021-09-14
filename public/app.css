@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 24px;
     height: calc(100vh - 48px);
+    font-family: sans-serif;
 }
 main {
     display: flex;
