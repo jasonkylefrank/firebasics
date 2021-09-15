@@ -1,0 +1,20 @@
+{
+  "name": "firebasics",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "firebase emulators:start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonkylefrank/firebasics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasonkylefrank/firebasics/issues"
+  },
+  "homepage": "https://github.com/jasonkylefrank/firebasics#readme",
+  "dependencies": {
+    "faker": "^5.5.3"
+  }
+}
