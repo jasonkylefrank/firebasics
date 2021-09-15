@@ -8,6 +8,8 @@
 
         <link rel="stylesheet" href="app.css" />
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.0.1/faker.min.js"></script>
+
         <!-- The core Firebase JS SDK is always required and must be listed first -->
         <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
 
@@ -71,11 +73,23 @@
     
                 </div>
                 <button id="signOutBtn">Sign out</button>
+
+
+                <section id="things">
+                    <h1>My Firestore things</h1>
+                    <ul id="thingsList">
+    
+                    </ul>
+    
+                    <button id="createThingBtn">Create random thing</button>
+                </section>
             </section>
+
+            
         </main>
 
         <footer>
-            Powered by Firebase
+            Powered by Firebase technologies
         </footer>
     </body>
 </html>
